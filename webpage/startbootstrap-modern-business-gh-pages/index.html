@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title> Novel Health Insurance Charge Prediction</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html">Predicting Health Insurance Costs</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="eda.html">EDA</a></li>
+                            <li class="nav-item"><a class="nav-link" href="modelling.html">Modeling</a></li>
+                            <li class="nav-item"><a class="nav-link" href="conclusion.html">Conclusions</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                            <li class="nav-item dropdown">
+                              <!--
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                    <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
+                                    <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                    <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
+                                    <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+-->
+            </nav>
+            <!-- Header-->
+            <header class="bg-dark py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6"> 
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-5 fw-bolder text-white mb-2">Health Insurance Cost Predictor</h1>
+                                  <p class="lead fw-normal text-white-50 mb-4"> <br> A Machine learning based estimation tool for predicting patient insurance prices </p> 
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="modelling.html">Get Started!</a>
+                                    <a class="btn btn-outline-light btn-lg px-4" href="#features">Learn More</a>
+-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img src="img/health-medical-insurance-illustration-concept-isolated-people-patients-doctors_109722-583 (1).jpeg" width="105%", height="120%"/></div>
+                    </div>
+                </div>
+            </header>
+            <!-- Features section-->
+            <section class="py-5" id="features">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5">
+
+            <!-- Issue Accordion -->
+                      <h2 class="fw-bolder mb-3"><center>The Issue</center> </h2>
+                            <div class="accordion mb-5" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><strong>Healthcare Insurance Payment Difficulties</strong></button></h3>
+                                    <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            40% of American Adults admit that they have trouble with paying their healthcare insurance charges
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><strong>American Insurance Concerns</strong></button></h3>
+                                    <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        Unexpected Medical and Health Insurance bills are a top worry for Americans alongside fuel and transportation budgeting.
+                                        </div>
+                                    </div>
+                                </div>
+                              <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo"><strong>The Consequences of Hard-to-pay Insurance</strong></button></h3>
+                                    <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            The cost of healthcare and insurance often prevents people from getting needed care or filling prescriptions.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                      <!-- Objective Accordion -->
+
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <!--
+                        <div class="col-lg-4 mb-5 mb-lg-0"><h1 class="fw-bolder mb-0">The Issue:</h1></div>
+                        <div class="col-lg-8">
+                            <div class="row gx-5 row-cols-1 row-cols-md-2">
+                                <div class="col mb-5 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-cash-stack"></i></div>
+                                    <h2>Healthcare Costs</h2>
+                                    <h8 class="mb-0">40% of American Adults Have Trouble With paying their Healthcare Insurance costs <br><br>
+                                                     Unmanageable costs of healthcare related services can prevent people from getting necessary care or prescriptions.
+                                   </h8>
+                                </div>
+                                <div class="col mb-5 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-question-diamond"></i>
+</div>
+                                  <h2> What should we do? </h2>
+                                  <p class="mb-0"> We developed a machine learning tool that understood patterns from large amounts of patient data and can make predictions to help consumers understand their medical insurance better                                                           financially. </p>
+                                </div>
+                                                     -->
+                              <!--
+                                <div class="col mb-5 mb-md-0 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                                    <h2 class="h5">Featured title</h2>
+                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                </div>
+                                <div class="col h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                                    <h2 class="h5">Featured title</h2>
+                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                      -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy Python Enjoyers</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="https://www.ai-camp.org/">AICamp</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+
+
+
+
+<!--
+
+
+
+
+
+
+
+                                                                                                               _dP                 9m_
+                                                                                                             _#P                     9#_
+                                                                                                            d#@                       9#m
+                                                                                                           d##                         ###
+                                                                                                          J###                         ###L
+                                                                                                          {###K                       J###K
+                                                                                                          ]####K      ___aaa___      J####F
+                                                                                                      __gmM######_  w#P""   ""9#m  _d#####Mmw__
+                                                                                                   _g##############mZ_         __g##############m_
+                                                                                                 _d####M@PPPP@@M#######Mmp gm#########@@PPP9@M####m_
+                                                                                                a###""          ,Z"#####@" '######"\g          ""M##m
+                                                                                               J#@"             0L  "*##     ##@"  J#              *#K
+                                                                                               #"               `#    "_gmwgm_~    dF               `#_
+                                                                                              7F                 "#_   ]#####F   _dK                 JE
+                                                                                              ]                    *m__ ##### __g@"                   F
+                                                                                                                     "PJ#####LP"
+                                                                                               `                       0######
+                                                                                                                     _0#######0
+                                                                                                   .               _d#####^#####m__              ,
+                                                                                                    "*w_________am#####P"   ~9#####mw_________w*"
+                                                                                                        ""9@#####@M""           ""P@#####@M""
+
+
+
+                             ___           ___           ___           ___           ___           ___                     ___           ___            ___         ___           ___           ___           ___           ___
+                            /\  \         |\__\         /\  \         /\__\         /\  \         /\__\                   /\  \         /\__\          /\  \       /\  \         |\__\         /\  \         /\  \         /\  \
+                           /::\  \        |:|  |        \:\  \       /:/  /        /::\  \       /::|  |                 /::\  \       /::|  |         \:\  \     /::\  \        |:|  |       /::\  \       /::\  \       /::\  \
+                          /:/\:\  \       |:|  |         \:\  \     /:/__/        /:/\:\  \     /:|:|  |                /:/\:\  \     /:|:|  |     ___ /::\__\   /:/\:\  \       |:|  |      /:/\:\  \     /:/\:\  \     /:/\ \  \
+                         /::\~\:\  \      |:|__|__       /::\  \   /::\  \ ___   /:/  \:\  \   /:/|:|  |__    _____    /::\~\:\  \   /:/|:|  |__  /\  /:/\/__/  /:/  \:\  \      |:|__|__   /::\~\:\  \   /::\~\:\  \   _\:\~\ \  \
+                        /:/\:\ \:\__\     /::::\__\     /:/\:\__\ /:/\:\  /\__\ /:/__/ \:\__\ /:/ |:| /\__\  /\____\  /:/\:\ \:\__\ /:/ |:| /\__\ \:\/:/  /    /:/__/ \:\__\     /::::\__\ /:/\:\ \:\__\ /:/\:\ \:\__\ /\ \:\ \ \__\
+                        \/__\:\/:/  /    /:/~~/~       /:/  \/__/ \/__\:\/:/  / \:\  \ /:/  / \/__|:|/:/  /  \/____/  \:\~\:\ \/__/ \/__|:|/:/  /  \::/  /     \:\  \ /:/  /    /:/~~/~    \:\~\:\ \/__/ \/_|::\/:/  / \:\ \:\ \/__/
+                             \::/  /    /:/  /        /:/  /           \::/  /   \:\  /:/  /      |:/:/  /             \:\ \:\__\       |:/:/  /    \/__/       \:\  /:/  /    /:/  /       \:\ \:\__\      |:|::/  /   \:\ \:\__\
+                              \/__/     \/__/         \/__/            /:/  /     \:\/:/  /       |::/  /               \:\ \/__/       |::/  /                  \:\/:/  /     \/__/         \:\ \/__/      |:|\/__/     \:\/:/  /
+                                                                      /:/  /       \::/  /        /:/  /                 \:\__\         /:/  /                    \::/  /                     \:\__\        |:|  |        \::/  /
+                                                                      \/__/         \/__/         \/__/                   \/__/         \/__/                      \/__/                       \/__/         \|__|         \/__/
+
+
+
+
+
+
+
+-->
+
+  
+  
+    </body>
+</html>
